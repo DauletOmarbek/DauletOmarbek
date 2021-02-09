@@ -1,0 +1,24 @@
+a=int(input("First: "))
+b=int(input("Second: "))
+c=input("Fisrt or second(<,>,=): ")
+if a<b:
+    if c=="<":
+        print("Good job!!!")
+    if c==">":
+        print("Try again")
+    if c=="=":
+        print("Try again")
+if a>b:
+    if c=="<":
+        print("Good job!!!")
+    if c=="=":
+        print("Try again")
+    if c==">":
+        print("Try again")       
+if a==b:
+    if c=="=":
+        print("Good job!!!")
+    if c==">":
+        print("Try again")
+    if c=="<":
+        print("Try again")        
