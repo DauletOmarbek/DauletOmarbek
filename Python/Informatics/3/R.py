@@ -1,0 +1,5 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+print(min(c,d,max(a,b)-d,min(a,b)-c))

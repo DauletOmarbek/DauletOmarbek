@@ -14,3 +14,4 @@ for x in range(a,b+1):
             d+=1
         if d==3:
             print(x)
+            

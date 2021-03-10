@@ -1,0 +1,6 @@
+a=set(map(int, input().split()))
+b=set(map(int, input().split()))
+c=set()
+c.update(a)
+c.update(b)
+print(abs(len(c)-len(b)-len(a)))

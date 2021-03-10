@@ -1,4 +1,2 @@
-a=str(input())
-for x in range(0,len(a)):
-    if a[x]==".":
-        print(a[x+1])
+a=float(input())
+print(round(((a-(a//1))*10)%10-((a-(a//1))*10)%1))
