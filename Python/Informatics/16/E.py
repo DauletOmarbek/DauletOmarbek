@@ -1,37 +1,27 @@
 a=list(map(int,input().split()))
-aniy=list()
-bory=list()
+aniy=set()
+bory=set()
 for x in range(a[0]):
     c=int(input())
-    aniy.append(c)
+    aniy.add(c)
 for x in range(a[1]):
     c=int(input())
-    bory.append(c)
-n=int(0)
-equal=list()
+    bory.add(c)
 
-for color in aniy:
-    if color in bory:
-        n+=1
-        equal.append(color)
-print(n)
-for x in equal:
+sorted(aniy,key=int)
+sorted(bory,key=int)
+c=set()
+c=aniy.intersection(bory)
+print(len(c))
+for x in c:
+    print(x,end=" ")
+    aniy.remove(x)
+    bory.remove(x)
+print(" ")
+print(len(aniy))
+for x in aniy:
     print(x,end=" ")
 print(" ")
-
-print(abs(len(aniy)-n))
-for item in equal:
-    if item in aniy:
-        aniy.remove(item)
-    if item in bory:
-        bory.remove(item)
-aniy.sort()
-bory.sort()
-
-for x in aniy:
-    print(x , end=" ")
-
-print(" ")
-print(abs(len(bory)-n))
+print(len(bory))
 for x in bory:
-    print(x , end=' ')
+    print(x,end=" ")
