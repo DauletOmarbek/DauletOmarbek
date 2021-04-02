@@ -1,8 +1,18 @@
-x=int(input("Первый число: "))
-y=int(input("Второе число: "))
-if x>y:
-    print(x, "больше.")
-elif x<y:
-    print(y, "больше.")
-elif x==y:
-    print(x, "и", y, "равны.")
+txt="Hello World"
+print(txt[2:])
+
+
+19
+
+5 5 5 4
+
+
+21
+
+5 5 5 5 1
+12
+5 5 2
+
+
+(a//5)+1=4+1
+
