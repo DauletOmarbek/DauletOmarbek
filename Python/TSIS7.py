@@ -61,12 +61,13 @@ while run:
         else:
             pygame.draw.line(win, (0,0,0), [559,x], [555,x])
     PI =3.14
-    for x in range(60, 540):
+    for x in range(60, 540,3):
 
         cos_y1 = 160*math.cos(((x-60)/80)*PI)
         cos_y2 = 160*math.cos(((x+1-60)/80)*PI)
         pygame.draw.aalines(win, (0,0,255), False, [(x, 200 + cos_y1), ((x + 1), 200 + cos_y2)])
-
+    
+    for x in range(60, 540):
         sin_y1 = 160*math.sin(((x-60)/80)*PI)
         sin_y2 = 160*math.sin(((x+1-60)/80)*PI)
         pygame.draw.aalines(win, (255,0,0), False, [(x, 200 + sin_y1), ((x + 1), 200 + sin_y2)])
@@ -110,6 +111,16 @@ while run:
                 text2 = f2.render('2', True, (0, 0, 0))
                 win.blit(text2, (place+9,395))
                 place+=40
+    pygame.draw.line(win,(255,255,255),[380,41],[380,79])
+    f1 = pygame.font.SysFont('serif', 20)
+    text1 = f1.render('sin', True, (0, 0, 0))
+    win.blit(text1, (365,40))
+    f2 = pygame.font.SysFont('serif', 20)
+    text2 = f2.render('cos', True, (0, 0, 0))
+    win.blit(text2, (365,58))
+    pygame.draw.line(win,(255, 0, 0),[400,53],[440,53],2)
+    for x in range(400,440,10):
+        pygame.draw.line(win,(0, 0, 255),[x,70],[x+5,70],2)
 
 
 
