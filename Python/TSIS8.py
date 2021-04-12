@@ -88,12 +88,9 @@ while run:
     #pygame.draw.rect(screen,(255,0,0),(car2_x,car2_y, 100, 200))
     car2_y +=car2_speed
     if car2_y>800:
-        if level%3==0:
-            car2_speed+=1
-            car1_speed+=1
-            car1_speed_turn+=1
+        car2_x = random.randint(0,900)
         car2_y = -300
-        
+       
 
     #coin
     screen.blit(coin_image,(coin_x,coin_y))
@@ -106,6 +103,10 @@ while run:
         coin_x = coin_random(car2_x)
         coin_y = -50
         level+=1
+        if level%3==0:
+            car2_speed+=1
+            car1_speed+=1
+            car1_speed_turn+=1
         
     #accident
     if ((car2_x < car1_x+90 and car1_x+90 < car2_x+90) or (car2_x < car1_x+20 and car1_x+20 < car2_x+90)) and not accident and ((car2_y < car1_y and car1_y < car2_y+190) or (car2_y < car1_y+190 and car1_y+190 < car2_y+190)):
