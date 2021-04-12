@@ -1,5 +1,5 @@
-if 5>2:
-    print ("Five is greater than two!")
-if 5<10:
-        print ("Ten is greater than ywo!")
-        #This is the comment.
+a = {1,2,3,4,5}
+b = {2,4,6}
+for x in b:
+    if x in a:
+        

@@ -1,2 +1,2 @@
-a=str(input())
-print(len(a))
+import math
+print(7!!)
