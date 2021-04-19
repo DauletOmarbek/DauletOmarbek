@@ -40,7 +40,7 @@ while game_is_running:
                         pygame.event.post(pygame.event.Event(QUIT))
                     if event.key == K_1:
                         diff = 10
-                    if event.key == K_2:4
+                    if event.key == K_2:
                         diff = 20
                     if event.key == K_3:
                         diff = 30

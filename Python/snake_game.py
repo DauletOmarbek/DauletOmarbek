@@ -34,7 +34,7 @@ while run:
     if pressed[pygame.K_RIGHT] and x_speed!=(-1)*speed:
         x_speed=(1)*speed 
         y_speed=0
-    pygame.time.delay(30)
+    pygame.time.delay(60)
     win.fill((0,0,0))
     pygame.display.update()
     
