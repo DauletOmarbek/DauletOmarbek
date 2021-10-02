@@ -24,6 +24,7 @@ create table products(
 create table order_items(
     order_code integer REFERENCES orders (code),
     product_id varchar REFERENCES products (id),
-    quantity integer NOT NULL CHECK ( quantity > 0 )
+    quantity integer NOT NULL CHECK ( quantity > 0 ),
+
 )
 
