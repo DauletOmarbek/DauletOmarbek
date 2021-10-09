@@ -1,6 +1,6 @@
 
 --1 Для DDL
-create table  instructor(
+create table  inst(
     ID  char(5),
     name varchar(20),
     dept_name varchar(20),
@@ -8,25 +8,25 @@ create table  instructor(
 )
 
 
-drop table instructor
+drop table inst
 
 
 
-alter table instructor add age numeric CHECK ( age > 0)
+alter table inst add age numeric CHECK ( age > 0)
 
 
 
 --2 Для DML
-insert into instructor (ID, name) values  ('123', 'Daulet');
-insert into instructor (ID, name) values  ('321', 'Omarbek');
+insert into inst (ID, name) values  ('123', 'Daulet');
+insert into inst (ID, name) values  ('321', 'Omarbek');
 
 
 select ID
-from instructor
+from inst
 where name = 'Omarbek'
 
-update instructor
-set salary = salary + 50000
+update inst
+set salary = 50000
 where name = 'Daulet'
 
 delete

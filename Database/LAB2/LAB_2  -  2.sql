@@ -1,4 +1,4 @@
-create  table customers(
+create  table custom(
     id integer PRIMARY KEY ,
     full_name varchar(50) NOT NULL,
     timestamp timestamp NOT NULL,
@@ -8,7 +8,7 @@ create  table customers(
 
 create table orders(
     code integer PRIMARY KEY ,
-    customer_id integer REFERENCES customers(id),
+    customer_id integer REFERENCES custom(id),
     total_sum double precision NOT NULL CHECK ( total_sum > 0 ),
     is_paid boolean NOT NULL
 )
