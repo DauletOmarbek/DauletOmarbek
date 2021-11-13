@@ -1,25 +1,26 @@
---1
-create role accountant;
-grant all privileges on accounts to accountant;
+create table customers (
+    id integer primary key,
+    name varchar(255) NOT NULL,
+    birth_date date NOT NULL
+);
 
-create role administrator;
-grant all privileges on customers,transactions,accounts to administrator;
+create table accounts(
+    account_id varchar(40) primary key ,
+    customer_id integer references customers(id),
+    currency varchar(3) NOT NULL ,
+    balance float NOT NULL default 0,
+    "limit" float NOT NULL default 0
+);
 
-create role support;
-grant select on customers, transactions, accounts to support;
+create table transactions (
+    id serial primary key ,
+    date timestamp NOT NULL,
+    src_account varchar(40) references accounts(account_id),
+    dst_account varchar(40) references accounts(account_id),
+    amount float NOT NULL,
+    status varchar(20) NOT NULL
+);
 
---2
-create user Rahat;
-grant accountant to Rahat;
-
-create user Daulet;
-grant administrator to Daulet;
-
-create user Magzhan;
-grant support to Magzhan;
-
---3
-grant Magzhan to Daulet;
-
---4
-revoke delete on accounts from accountant;
+DROP table transactions
+DROP table accounts
+DROP table customers
