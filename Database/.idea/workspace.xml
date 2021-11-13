@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d45c16c4-d090-4376-9d77-f4b9d5448d90" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LAB6/2.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/123.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB 7/2.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB 7/5.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e79a1fe-8a0a-4237-a71d-95e511be3bb6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4e79a1fe-8a0a-4237-a71d-95e511be3bb6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e79a1fe-8a0a-4237-a71d-95e511be3bb6/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4e79a1fe-8a0a-4237-a71d-95e511be3bb6/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e79a1fe-8a0a-4237-a71d-95e511be3bb6/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +29,7 @@
     <property name="RunOnceActivity.OpenDatabaseViewOnStart" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/LAB 7" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="Vcs.Log.Tabs.Properties">
@@ -39,5 +42,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
