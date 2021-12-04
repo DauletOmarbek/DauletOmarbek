@@ -74,6 +74,12 @@ create table price_stores(
 );
 */
 
+create table product_store(
+    store_id integer REFERENCES stores(stores_id),
+    UPC_code integer REFERENCES products(UPC_code),
+    quantity integer CHECK ( quantity > -1 )
+);
+
 create table regular_customers(
     customer_id integer PRIMARY KEY,
     name namee NOT NULL,
@@ -119,6 +125,9 @@ create or replace function alll_orders()
     BEGIN
         insert into all_orders(order_online, customers_id, store_id, UPC_code, price, time)
         values (false,new.customers_id, new.store_id, new.UPC_code, new.price, new.time);
+        update product_store
+            SET quantity = quantity - 1
+            where product_store.store_id = new.store_id and product_store.UPC_code = new.UPC_code;
         return new;
     end;
     $$;
@@ -131,6 +140,9 @@ create or replace function allll_orders()
     BEGIN
         insert into all_orders(order_online, customers_id, store_id, UPC_code, price, time)
         values (true,new.customers_id, new.store_id, new.UPC_code, new.price, new.time);
+        update product_store
+            SET quantity = quantity - 1
+            where product_store.store_id = new.store_id and product_store.UPC_code = new.UPC_code;
         return new;
     end;
     $$;
@@ -146,4 +158,30 @@ create TRIGGER insert_orderr
     ON online_orders
     FOR EACH ROW
     EXECUTE PROCEDURE allll_orders();
+
+drop table all_orders;
+drop table customer_orders;
+drop table online_orders;
+drop table vendors_brands;
+drop table regular_customers;
+drop table product_store;
+drop table stores_vendors;
+drop table vendors;
+drop table stores;
+drop table brand_product;
+drop table price;
+drop table product_types;
+drop table types;
+drop table products;
+drop table brands
+
+drop type addresss;
+drop  type namee;
+drop function alll_orders();
+drop function allll_orders();
+
+
+
+
+
 

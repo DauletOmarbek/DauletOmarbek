@@ -3,9 +3,8 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/LAB2/LAB_2  -  2.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/LAB8/1.sql" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/Part 2 of the project/2.sql" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/Part 2 of the project/3.sql" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/Part 2 of the project/create table.sql" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/Part 2 of the project/insert.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Part 2 of the project/Populate insert.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Part 2 of the project/Relational model.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Part 2 of the project/Select.sql" dialect="GenericSQL" />
   </component>
 </project>
