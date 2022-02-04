@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d45c16c4-d090-4376-9d77-f4b9d5448d90" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Part 2 of the project/Select.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/123/insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/123/relation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/123/select.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/3acb2cb5-2bf1-4d2c-b593-f685d52fbe68.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3acb2cb5-2bf1-4d2c-b593-f685d52fbe68.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/3acb2cb5-2bf1-4d2c-b593-f685d52fbe68/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3acb2cb5-2bf1-4d2c-b593-f685d52fbe68/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/3acb2cb5-2bf1-4d2c-b593-f685d52fbe68/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3acb2cb5-2bf1-4d2c-b593-f685d52fbe68/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6679555d-9eb6-4fb8-a031-9139c312a138.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6679555d-9eb6-4fb8-a031-9139c312a138/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6679555d-9eb6-4fb8-a031-9139c312a138/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6679555d-9eb6-4fb8-a031-9139c312a138/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6679555d-9eb6-4fb8-a031-9139c312a138/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6679555d-9eb6-4fb8-a031-9139c312a138/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part 2 of the project/2.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part 2 of the project/Populate insert.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Part 2 of the project/Populate insert.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part 2 of the project/Relational model.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Part 2 of the project/Relational model.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

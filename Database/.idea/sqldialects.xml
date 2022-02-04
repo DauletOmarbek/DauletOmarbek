@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/123/insert.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/123/relation.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/123/select.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/LAB2/LAB_2  -  2.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/LAB8/1.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/Part 2 of the project/Populate insert.sql" dialect="GenericSQL" />
