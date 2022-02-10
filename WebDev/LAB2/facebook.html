@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Facebook ── Выполните вход или зарегистрируйтесь</title>
+        <style>
+        body {
+            background-color: rgb(240, 242, 245);
+        }
+         #img {
+            height: 106px;
+            padding: 0px 20px 0;
+            position: relative;
+            top: 40px;
+        }
+        p {
+            font-family: Helvetica;
+            font-size: 24px;
+            line-height: 28px;
+            padding: 0 50px 0;
+            width: 390px;
+        }
+        #leftblock {
+            width: 450px;
+            height: 300px;
+            float: left;
+            margin-left: 15%;
+            margin-right: auto;
+            
+        }
+        #rightblock {
+            width: 396px;
+            height: 370px;
+            border-radius: 8px;
+            background-color: white;
+            float: right;
+            margin-left:auto;
+            margin-right: 15%;
+        }
+        .email {
+            height: 50px;
+            border: 3px solid rgb(240, 242, 245);
+            border-radius: 8px;
+            margin: 3%;
+        }
+        .login {
+            height: 50px;
+            border: 3px solid rgb(24, 119, 242);
+            background-color: rgb(24, 119, 242) ;
+            border-radius: 8px;
+            margin: 3%;
+        }
+        .account {
+            height: 50px;
+            border: 3px solid rgb(66, 183, 42);
+            background-color: rgb(66, 183, 42) ;
+            border-radius: 8px;
+            margin: 7%;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .email_text {
+            font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+            color: rgb(148, 150, 156);
+            margin: 4%;
+            padding-left: 5px;
+            font-size: 17px;
+        }
+        .password_text {
+            font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+            margin: 4%;
+            padding-left: 8px;
+            color: rgb(148, 150, 156);
+            font-size: 17px;
+        }
+        .login_text {
+            font-family:Arial Black;
+            margin: 3%;
+            margin-left: 40%;
+            padding-left: 8px;
+            font-size: 20px;
+            color: white;
+        }
+        .pass {
+            color: rgb(24, 119, 242);
+            margin-left: 35%;
+        }
+        .line {
+            border-bottom: 1px solid #dadde1;
+            margin: 20px 16px;
+        }
+        .account_text {
+            font-family:Arial Black;
+            margin: 3%;
+            margin-left: 5%;
+            margin-top: 13px;
+            font-size: 15px;
+            color: white;
+        }
+        .text {
+            font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+            text-align: center;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+        #unline {
+            text-decoration: none;
+            color: black;
+        }
+        .pass{
+            text-decoration: none;
+        }
+        .language_text{
+            text-decoration: none;
+        }
+        #block {
+            height: 450px;
+            margin-top: 150px ;
+        }
+        .endblock {
+            height: 150px;
+            background-color: white;
+
+        }
+
+        .language {
+            font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            color:rgb(148, 150, 156) ;
+            padding-top: 30px;
+            text-align: center;
+            line-height: 12px ;
+        }
+        @media screen and (max-width: 1245px) {
+            #leftblock {
+                float: none;
+                margin-top: 5px;
+                margin-bottom: 25px;
+                margin-left: auto;
+            }
+            #block {
+                height: 800px;
+                margin-top: 50px;
+            }
+            #rightblock {
+                float: none;
+                margin-right: auto;
+            }
+
+        }
+        .end {
+            width: 65%;
+            margin-left: 10%;
+            text-align: center;
+            line-height: 20px;
+
+        }
+        .end li{
+            margin-top: 30px;
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .items {
+            font-size: 13px;
+            color: rgb(142, 142, 142);
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+        .end_block {
+            margin-top: 115px;
+            height: 150px;
+            background-color: white;
+            width: 100%;
+        }
+        .end_line {
+            width: 65%;
+            border-bottom: 1px solid #dadde1;
+            margin-left: 16%;
+        }
+        .endend {
+            width: 65%;
+            margin-left: 14%;
+            line-height: 1px;
+
+        }
+        .endend li{
+            margin-top: 18px;
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .itemss {
+            font-size: 13px;
+            color: rgb(142, 142, 142);
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+        .email_text {
+            border: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="block">
+        <div id="leftblock">
+        <img id="img" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+        <p>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.
+        </p>
+        </div>
+
+        <div id="rightblock">
+            <div class="email">
+            <input class="email_text" name="input" type="text" placeholder="Электронный адрес или номер телефона" size="32"/>
+            </div>
+            <div class="email">
+            <input class="email_text" name="input" type="text" placeholder="Пароль" size="32"/>            
+            </div>
+            <a href=""><div class="login" onmouseover="this."> <h1 class="login_text">Вход</h1></div></a>
+            <a href="" class="pass">Забыли пароль?</a>
+            <div class="line"></div>
+            <div class="account">
+                <a href=""><div  class="account_text">Создать новый аккаунт</div></a>
+            </div>
+            <div class="text">
+                <strong><a href="" id="unline">Создать Страницу</a></strong> знаменитости, музыкальной группы или компании.
+            </div>
+        </div>
+        </div>
+        <div class="end_block">
+        <div class="end">
+            <nav>
+                <ul>
+                    <li class="items"><a href="">Русский</a></li>
+                    <li class="items"><a href="">English (US)</a></li>
+                    <li class="items"><a href="">Türkçe</a></li>
+                    <li class="items"><a href="">Bahasa</a></li>
+                    <li class="items"><a href="">Indonesia</a></li>
+                    <li class="items"><a href="">中文(简体)</a></li>
+                    <li class="items"><a href="">Қазақша</a></li>
+                    <li class="items"><a href="">Deutsch</a></li>
+                    <li class="items"><a href="">한국어</a></li>
+                    <li class="items"><a href="">Shqip</a></li>
+                    <li class="items"><a href="">Español</a></li>
+                    <li class="items"><a href="">Português (Brasil)</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="end_line"></div>
+        <div class="endend">
+            <nav>
+                <ul>
+                    <li class="itemss"><a href="">Регистрация</a></li>
+                    <li class="itemss"><a href="">Вход</a></li>
+                    <li class="itemss"><a href="">Messenger</a></li>
+                    <li class="itemss"><a href="">Facebook Lite</a></li>
+                    <li class="itemss"><a href="">Watch</a></li>
+                    <li class="itemss"><a href="">Места</a></li>
+                    <li class="itemss"><a href="">Игры</a></li>
+                    <li class="itemss"><a href="">Marketplace</a></li>
+                    <li class="itemss"><a href="">Facebook Pay</a></li>
+                    <li class="itemss"><a href="">Oculus</a></li>
+                    <li class="itemss"><a href="">Portal</a></li>
+                    <li class="itemss"><a href="">Instagram</a></li>
+                    <li class="itemss"><a href="">Bulletin</a></li>
+                    <li class="itemss"><a href="">Местные</a></li>
+                    <li class="itemss"><a href="">Благотворительные акции</a></li>
+                    <li class="itemss"><a href="">Услуги</a></li>
+                    <li class="itemss"><a href="">Центр информации о голосовании</a></li>
+                    <li class="itemss"><a href="">Группы</a></li>
+                    <li class="itemss"><a href="">Информация</a></li>
+                    <li class="itemss"><a href="">Создать рекламу</a></li>
+                    <li class="itemss"><a href="">Создать Страницу</a></li>
+                    <li class="itemss"><a href="">Разработчикам</a></li>
+                    <li class="itemss"><a href="">Вакансии</a></li>
+                    <li class="itemss"><a href="">Конфиденциальность</a></li>
+                    <li class="itemss"><a href="">Файлы cookie</a></li>
+                    <li class="itemss"><a href="">Рекламные предпочтения</a></li>
+                    <li class="itemss"><a href="">Условия использования</a></li>
+                    <li class="itemss"><a href="">СправкаНастройки</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </body>
+</html>

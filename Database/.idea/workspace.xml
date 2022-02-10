@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d45c16c4-d090-4376-9d77-f4b9d5448d90" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/123/insert.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/123/relation.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/123/select.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3acb2cb5-2bf1-4d2c-b593-f685d52fbe68.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3acb2cb5-2bf1-4d2c-b593-f685d52fbe68.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3acb2cb5-2bf1-4d2c-b593-f685d52fbe68/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3acb2cb5-2bf1-4d2c-b593-f685d52fbe68/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3acb2cb5-2bf1-4d2c-b593-f685d52fbe68/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3acb2cb5-2bf1-4d2c-b593-f685d52fbe68/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebDev/LAB1/CSSlayout/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDev/LAB1/CSSlayout/1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebDev/LAB1/CSSlayout/2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDev/LAB1/CSSlayout/2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebDev/LAB1/CSSlayout/3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDev/LAB1/CSSlayout/3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebDev/LAB1/CSSlayout/4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDev/LAB1/CSSlayout/4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebDev/LAB1/CSSlayout/5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDev/LAB1/CSSlayout/5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebDev/LAB1/CSStextproperties/2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDev/LAB1/CSStextproperties/2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebDev/LAB1/CSStextproperties/3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDev/LAB1/CSStextproperties/3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebDev/LAB1/CSStextproperties/4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDev/LAB1/CSStextproperties/4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebDev/LAB1/MoreCSSselectors/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDev/LAB1/MoreCSSselectors/1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebDev/LAB1/MoreCSSselectors/2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDev/LAB1/MoreCSSselectors/2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebDev/LAB1/MoreCSSselectors/3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDev/LAB1/MoreCSSselectors/3.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
