@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function sum(obj){
+                let n = 0;
+                for(let key in obj){
+                    n+=Number(obj[key]);
+                }
+                return n;
+            }
+            let salaries = {
+            John: 100,
+            Ann: 160,
+            Pete: 130
+            };
+            alert(sum(salaries));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let answer = prompt('Кто там?');
+            if (answer == 'Admin'){
+                let pass = prompt('Пароль');
+                if(pass == 'Я главный'){
+                    alert('Здравствуйте!');
+                } else if(pass == '' || pass == null){
+                    alert('Отменено');
+                } else{
+                    alert('Неверный пароль');
+                }
+            } else if(answer == '' || answer == null){
+                alert('Отменено')
+            } else{
+                alert('Неверный пароль');
+            }
+        </script>
+    </body>
+</html>

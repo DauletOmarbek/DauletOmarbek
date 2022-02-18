@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .block1{
+                height: 50px;
+                background-color: black;
+                color: rgb(195, 195, 195);
+                font-family: sans-serif;
+                font-size: 25px;
+                padding-left: 100px;
+                padding-top: 20px;
+            }
+            .main_block {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 80px;
+            }
+            .text {
+                font-family: sans-serif;
+                font-size: 35px;
+            }
+            .add_block {
+                margin-top: 40px;
+                display: inline-flex;
+                width: 1200px;
+                margin-left: 80px;
+                margin-right: auto;
+            }
+            #input {
+                padding-left: 10px;
+                border-radius: 5px;
+                border: 2px solid rgb(179, 179, 179);
+                width: 900px;
+                height: 30px;
+            }
+            #btm {
+                margin-left: 30px;
+                border: 3px solid rgb(51, 122, 183);
+                border-radius: 5px;
+                background-color: rgb(51, 122, 183);
+                color: white;
+                font-family: sans-serif;
+                font-size: 18px;
+                width: 60px;
+                padding-top: 5px;
+                text-align: center;
+            }
+            
+            ul li {
+                width: 800px;
+                padding: 15px;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid rgb(179, 179, 179);
+            }
+            .dell {
+                float: right;
+                width: 30px;
+                height: 15px;
+                border: none;
+                background-color: white;
+            }
+            .imgg {
+                width: 20px;
+                height: 20px;
+            }
+            li {
+                list-style: none;
+            }
+            li:checked{
+                text-decoration: line-through;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="block1">ToDo List</div>
+    <div class="main_block">
+        <div class="text">ToDo List</div>
+        <div class="add_block">
+            <input type="text" id="input" placeholder="New Task">
+            <input id='btm' type="button" value="Add" >
+        </div>
+        <ul id="list">
+            <li><input type="checkbox">First item<button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button></li>
+            <li><input type="checkbox">Second item<button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button></li>
+            <li><input type="checkbox">Third item<button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button></li>
+            <li><input type="checkbox">Fourth item<button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button></li>
+        </ul>
+    </div>
+    <script>
+        function addd(){
+            let liFirst = document.createElement('li');
+            if(document.getElementById('input').value != ''){
+                liFirst.innerHTML = '<input type="checkbox">' + document.getElementById('input').value + '<button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button>';
+                list.prepend(liFirst);
+            }
+        }
+        btm.onclick = addd;
+        document.querySelector('ul').onclick = function(e) {
+        const btn = e.target.closest('.dell');
+        if (!btn) {
+            return;
+        }
+        
+        btn.parentElement.remove();
+        btn.closest('li').remove();
+        }
+    </script>
+    </body>
+</html>
