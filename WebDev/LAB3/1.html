@@ -72,9 +72,6 @@
             li:checked{
                 text-decoration: line-through;
             }
-            .ren{
-                float: right;
-            }
         </style>
     </head>
     <body>
@@ -86,38 +83,35 @@
             <input id='btm' type="button" value="Add" >
         </div>
         <ul id="list">
-            <li><input type="checkbox">First item<button class="ren">Rename</button><button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button></li>
-            <li><input type="checkbox">Second item<button class="ren">Rename</button><button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button></li>
-            <li><input type="checkbox">Third item<button class="ren">Rename</button><button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button></li>
-            <li><input type="checkbox">Fourth item<button class="ren">Rename</button><button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button></li>
+            <li><input type="checkbox"><button class="renm">First item</button><button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button></li>
+            <li><input type="checkbox"><button class="renm">Second item</button><button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button></li>
+            <li><input type="checkbox"><button class="renm">Third item</button><button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button></li>
+            <li><input type="checkbox"><button class="renm">Fourth item</button><button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button></li>
         </ul>
     </div>
     <script>
         function addd(){
             let liFirst = document.createElement('li');
             if(document.getElementById('input').value != ''){
-                liFirst.innerHTML = '<input type="checkbox">' + document.getElementById('input').value + '<button class="ren">Rename</button>' + '<button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button>';
+                liFirst.innerHTML = '<input type="checkbox">' + document.getElementById('input').value + '<button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button>';
                 list.prepend(liFirst);
             }
         }
         btm.onclick = addd;
         document.querySelector('ul').onclick = function(e) {
         const btn = e.target.closest('.dell');
-        const btn1 = e.target.closest('.ren');
         if (btn) {
             btn.parentElement.remove();
-            btn.closest('li').remove();
+            btn.closest('li').remove();   
         }
-        if (btn1) {
-            let liFirst = document.createElement('li');
-            if(document.getElementById('input').value != ''){
-                liFirst.innerHTML = '<input type="checkbox">' + document.getElementById('input').value + '<button class="ren">Rename</button>' + '<button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button>';
-                btn1.parentElement.replaceWith(liFirst);
-                
+        const ren = e.target.closest('.renm');
+        if (ren){
+        let liFirst = document.createElement('li');
+        if(document.getElementById('input').value != ''){
+                liFirst.innerHTML = '<input type="checkbox">' + document.getElementById('input').value + '<button class="dell"><img class="imgg" src="https://flyclipart.com/thumb2/waste-icon-803054.png"></button>';
+                rem.
             }
         }
-
-        
         }
     </script>
     </body>
