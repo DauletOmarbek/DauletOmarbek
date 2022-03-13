@@ -8,13 +8,13 @@
     margin-top: 50px;
 }
 .right_block {
-    margin-left: 50px;
+    margin-left: 350px;
 }
 .lin {
     margin-left: 15px;
 }
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+.like {
+    margin-left: 20px;
+    background-color: red;
+    border-radius: 8px;
+}

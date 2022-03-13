@@ -1,32 +1,39 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
-import { products } from '../products';
+import { Product, products } from '../products';
 
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent {
+export class ProductListComponent implements OnInit {
+  constructor(private route: ActivatedRoute) { }
   products = products;
+  catag_name = '';
+  a = false;
+  like = 0;
+  ngOnInit(): void {
+    const routeParams = this.route.snapshot.paramMap;
+  const categoryNameFromRoute = String(routeParams.get('categoryName'));
 
-  text = '';
-
-  onNotify() {
-    window.alert('You will be notified when the product goes on sale');
+  // Find the product that correspond with the id provided in route.
+  this.catag_name = categoryNameFromRoute;
   }
 
-  www = '123';
+  foo (text: string) {
+    this.a = false;
+    if(text == this.catag_name){
+      this.a = true;
+    }
+  return this.a;
+  }
 
-  Addlink() {
-    this.text = "https://api.whatsapp.com/send/?phone&text=";
-    return this.text;
+  lik (n: number){
+    return n + this.like;
+  }
+  click (){
+    this.like = 1;
   }
 }
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
