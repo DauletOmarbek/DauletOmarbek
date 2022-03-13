@@ -1,7 +1,17 @@
 <h2>Product Details</h2>
 
 <div *ngIf="product">
+  <img class="im" src= {{product.imge}}>
   <h3>{{ product.name }}</h3>
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
+  <a href= "https://api.whatsapp.com/send/?phone&text= {{product.link}}" ><button type="button">
+    Share
+  </button>
+  </a>
+  <a href= {{product.link}} >
+    <button class="lin" type="button">
+    Link
+    </button>
+  </a>
 </div>
