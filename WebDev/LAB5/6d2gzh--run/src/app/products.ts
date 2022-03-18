@@ -5,6 +5,8 @@ export interface Product {
   description: string;
   category: string;
   like: number;
+  revome: boolean;
+  likebool: boolean;
 }
 
 export const products = [
@@ -17,6 +19,8 @@ export const products = [
     link: 'https://www.amazon.com/Acer-AN515-55-53E5-i5-10300H-GeForce-Keyboard/dp/B092YHJGMN/ref=sr_1_1?crid=3BGOUPQI4SZL2&keywords=Acer+Nitro+5&qid=1647096187&sprefix=acer+nitro+5%2Caps%2C389&sr=8-1',
     category: 'Computers_tablets',
     like: 234,
+    revome: true,
+    likebool: false,
   },
   {
     id: 2,
@@ -27,6 +31,8 @@ export const products = [
     link: 'https://www.amazon.com/Samsung-Galaxy-Lite-Tablet-Angora/dp/B086Z3S3MY/ref=sr_1_3?crid=Y2TTRFYKGRDB&keywords=Samsung+Galaxy+Tab+S6+Lite+10.4&qid=1647096238&sprefix=samsung+galaxy+tab+s6+lite+10.4%2Caps%2C260&sr=8-3',
     category: 'Computers_tablets',
     like: 324,
+    revome: true,
+    likebool: false,
   },
   {
     id: 3,
@@ -37,6 +43,8 @@ export const products = [
     link: 'https://www.amazon.com/Samsung-Electronics-UN32N5300AFXZA-1080p-Smart/dp/B07CL4GLQW/ref=sr_1_3?crid=29FU1SIIQC1Y6&keywords=SAMSUNG+32-inch+Class+LED+Smart+FHD+TV+1080P&qid=1647096291&sprefix=samsung+32-inch+class+led+smart+fhd+tv+1080p%2Caps%2C251&sr=8-3',
     category: 'Televisions',
     like: 456,
+    revome: true,
+    likebool: false,
   },
   {
     id: 4,
@@ -47,6 +55,8 @@ export const products = [
     link: 'https://www.amazon.com/Lenovo-Processor-Graphics-82HU00JWUS-Graphite/dp/B09BG96KFJ/ref=sr_1_5?qid=1647173842&s=computers-intl-ship&sr=1-5&th=1://www.amazon.com/Epson-3-Chip-Projector-Brightness-Speaker/dp/B08L7KHB5J/ref=sr_1_3?crid=8GQPMRT4LFPU&keywords=Epson+VS260+3-Chip+3LCD+XGA+Projector&qid=1647096335&sprefix=epson+vs260+3-chip+3lcd+xga+projector%2Caps%2C248&sr=8-3',
     category: 'Computers_tablets',
     like: 234,
+    revome: true,
+    likebool: false,
   },
   {
     id: 5,
@@ -57,6 +67,8 @@ export const products = [
     link: 'https://www.amazon.com/Acer-Predator-PH315-54-760S-i7-11800H-Keyboard/dp/B092YHJLS6/ref=sr_1_10?qid=1647173967&s=computers-intl-ship&sr=1-10',
     category: 'Computers_tablets',
     like: 789,
+    revome: true,
+    likebool: false,
   },
   {
     id: 6,
@@ -67,6 +79,8 @@ export const products = [
     link: 'https://www.amazon.com/Bluetooth-Wireless-Cancelling-Charging-Resistant/dp/B08MWZHHKP/ref=sr_1_3?crid=1RKWRXIHSIBFJ&keywords=SAMSUNG+Galaxy+Buds+Pro&qid=1647096413&sprefix=samsung+galaxy+buds+pro%2Caps%2C250&sr=8-3',
     category: 'Headphones',
     like: 678,
+    revome: true,
+    likebool: false,
   },
   {
     id: 7,
@@ -77,6 +91,8 @@ export const products = [
     link: 'https://www.amazon.com/Apple-iPhone-12-Pro-Max/dp/B09JFFG8D7/ref=sr_1_1?crid=2JABPDY281PH1&keywords=Apple+iPhone+12+Pro+Max%2C+256GB&qid=1647096440&sprefix=apple+iphone+12+pro+max%2C+256gb%2Caps%2C247&sr=8-1',
     category: 'Phones',
     like: 230,
+    revome: true,
+    likebool: false,
   },
   {
     id: 8,
@@ -87,6 +103,8 @@ export const products = [
     link: 'https://www.amazon.com/SAMSUNG-Unlocked-Smartphone-Intuitive-Warranty/dp/B097CMVWN9/ref=sr_1_3?crid=2G2JDBM8710O9&keywords=SAMSUNG+Galaxy+Z+Flip+3+5G&qid=1647096469&sprefix=samsung+galaxy+z+flip+3+5g%2Caps%2C564&sr=8-3',
     category: 'Phones',
     like: 3456,
+    revome: true,
+    likebool: false,
   },
   {
     id: 9,
@@ -97,6 +115,8 @@ export const products = [
     link: 'https://www.amazon.com/JBL-Tune-710BT-Wireless-Headphones/dp/B095QN9WHH/ref=sr_1_6?crid=DOXFN36MTSAI&keywords=JBL+Tune+510BT&qid=1647096496&sprefix=jbl+tune+510bt%2Caps%2C250&sr=8-6',
     category: 'Headphones',
     like: 267,
+    revome: true,
+    likebool: false,
   },
   {
     id: 10,
@@ -107,6 +127,8 @@ export const products = [
     link: 'https://www.amazon.com/HP-23-8-inch-Adjustment-Speakers-VH240a/dp/B072M34RQC/ref=sr_1_1?crid=1BAXTEVOQZ8MM&keywords=HP+VH240a+23.8-Inch+Full+HD&qid=1647096540&sprefix=hp+vh240a+23.8-inch+full+hd%2Caps%2C249&sr=8-1',
     category: 'Televisions',
     like: 787,
+    revome: true,
+    likebool: false,
   },
   {
     id: 11,
@@ -117,6 +139,8 @@ export const products = [
     link: 'https://www.amazon.com/Apple-MacBook-Processor-MQD32LL-Version/dp/B078H42W49/ref=sr_1_29?qid=1647173967&s=computers-intl-ship&sr=1-29',
     category: 'Computers_tablets',
     like: 234,
+    revome: true,
+    likebool: false,
   },
   {
     id: 12,
@@ -127,6 +151,8 @@ export const products = [
     link: 'https://www.amazon.com/Samsung-Smartphone-Unlocked-Brightest-Processor/dp/B09MVYRBF6/ref=sr_1_2?qid=1647174220&rnid=2811119011&s=electronics&sr=1-2&th=1',
     category: 'Phones',
     like: 786,
+    revome: true,
+    likebool: false,
   },
   {
     id: 13,
@@ -137,6 +163,8 @@ export const products = [
     link: 'https://www.amazon.com/OnePlus-Unlocked-Smartphone-Hasselblad-Wireless/dp/B07XM7WVS8/ref=sr_1_16?qid=1647174220&rnid=2811119011&s=electronics&sr=1-16&th=1',
     category: 'Phones',
     like: 234,
+    revome: true,
+    likebool: false,
   },
   {
     id: 14,
@@ -147,6 +175,8 @@ export const products = [
     link: 'https://www.amazon.com/Samsung-Electronics-Unlocked-Smartphone-Foldable/dp/B097CNBDX2/ref=sr_1_24?qid=1647174220&rnid=2811119011&s=electronics&sr=1-24&th=1',
     category: 'Phones',
     like: 345,
+    revome: true,
+    likebool: false,
   },
   {
     id: 15,
@@ -157,6 +187,8 @@ export const products = [
     link: 'https://www.amazon.com/Hisense-32-Inch-Android-Remote-32H5500G/dp/B08GQHX28C/ref=sr_1_17?qid=1647174613&rnid=1266092011&s=electronics&sr=1-17&th=1',
     category: 'Televisions',
     like: 678,
+    revome: true,
+    likebool: false,
   },
   {
     id: 16,
@@ -167,6 +199,8 @@ export const products = [
     link: 'https://www.amazon.com/SAMSUNG-QN32Q50RAFXZA-32Q50-Smart-TV2019/dp/B07W5QYD2K/ref=sr_1_9?qid=1647174818&refinements=p_89%3ASAMSUNG&rnid=2528832011&s=electronics&sr=1-9',
     category: 'Televisions',
     like: 58,
+    revome: true,
+    likebool: false,
   },
   {
     id: 17,
@@ -177,6 +211,8 @@ export const products = [
     link: 'https://www.amazon.com/LG-32LM577BPUA-Premium-Extended-Protection/dp/B099GQT66Y/ref=sr_1_6?qid=1647174899&refinements=p_89%3ALG&rnid=2528832011&s=electronics&sr=1-6',
     category: 'Televisions',
     like: 234,
+    revome: true,
+    likebool: false,
   },
   {
     id: 18,
@@ -187,6 +223,8 @@ export const products = [
     link: 'https://www.amazon.com/JBL-Tune-510BT-Ear-Headphones/dp/B08WM1V5P1/ref=sr_1_29?qid=1647175117&s=electronics&sr=1-29&th=1',
     category: 'Headphones',
     like: 345,
+    revome: true,
+    likebool: false,
   },
   {
     id: 19,
@@ -197,6 +235,8 @@ export const products = [
     link: 'https://www.amazon.com/Kids-Headphones-products-Tangle-Free-Ear/dp/B0746RBK2M/ref=sr_1_24?qid=1647175218&s=electronics&sr=1-24&th=1',
     category: 'Headphones',
     like: 234,
+    revome: true,
+    likebool: false,
   },
   {
     id: 20,
@@ -207,6 +247,8 @@ export const products = [
     link: 'https://www.amazon.com/Sony-Noise-Cancelling-Headphones-WHCH710N/dp/B085RNVJ3P/ref=sr_1_19?qid=1647175323&rnid=2528832011&s=electronics&sr=1-19&th=1',
     category: 'Headphones',
     like: 154,
+    revome: true,
+    likebool: false,
   },
 ];
 

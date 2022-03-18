@@ -22,18 +22,19 @@ export class ProductListComponent implements OnInit {
   this.catag_name = categoryNameFromRoute;
   }
 
-  foo (text: string) {
+  foo (text: string, bool: boolean) {
     this.a = false;
-    if(text == this.catag_name){
+    if(text == this.catag_name && bool){
       this.a = true;
     }
   return this.a;
   }
 
-  lik (n: number){
-    return n + this.like;
-  }
-  click (){
-    this.like = 1;
+  lik (n: boolean, like: number){
+    if (!n){
+      return like+1;}
+    else{
+      return like;
+    }
   }
 }

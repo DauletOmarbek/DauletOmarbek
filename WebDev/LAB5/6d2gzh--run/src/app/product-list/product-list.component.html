@@ -1,5 +1,5 @@
 <div class="block" *ngFor="let product of products">
-    <div *ngIf="foo(product.category)">
+    <div *ngIf="foo(product.category, product.revome)">
         <img class="im" src= {{product.imge}} >
   
   <div class="right_block">
@@ -24,7 +24,8 @@
       Link
       </button>
     </a>
-    <button class="like" (click)="product.like=product.like+1" >♥ {{product.like}}</button>
+    <button class="like"  (click)= "product.like = lik(product.likebool, product.like)" (click)="product.likebool = true" >♥ {{product.like}}</button>
+    <button class="rem" (click)="product.revome = false" >Remove</button>
     </div>
   </div>
 </div>
