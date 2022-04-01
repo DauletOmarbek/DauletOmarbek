@@ -11,6 +11,9 @@ export class AlbumsComponent implements OnInit {
   albums!: Album[];
   loaded!: boolean;
   newAlbum: string;
+  idd!: number;
+  boolsearch!: boolean;
+  searchtext!: string;
  
   constructor(private albumsService: AlbumsService) { 
     this.newAlbum = '';
@@ -18,6 +21,10 @@ export class AlbumsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAlbums();
+    this.idd = 100;
+    this.boolsearch = false;
+    this.searchtext = "";
+
   }
 
   getAlbums(){
@@ -29,15 +36,18 @@ export class AlbumsComponent implements OnInit {
   }
 
   addAlbum(){
+    this.idd = this.idd + 1;
     const album = {
+      id: this.idd,
       title: this.newAlbum
+      
     };
     this.loaded = false;
-    this.albumsService.addAlbum(album as Album).subscribe((album) => {
-      this.albums.unshift(album);
-      this.newAlbum='';
-      this.loaded = true;
+    this.albumsService.addAlbum(album as Album).subscribe((album) => { 
     });
+    this.albums.unshift(album);
+    this.newAlbum='';
+    this.loaded = true;
 
   }
   deleteAlbum(id:number){
@@ -45,6 +55,30 @@ export class AlbumsComponent implements OnInit {
     this.albumsService.deleteAlbum(id).subscribe(() =>{
       console.log('delete', id);
     });
+  }
+
+  bsearch(text: string){
+    if(text == ""){
+      this.boolsearch = false;
+    }
+    else{
+      this.boolsearch = true
+    }
+  }
+
+  search(x: string, y:string){
+    var i:number;
+    var s:string;
+    s = "";
+    for(i = 0; i < y.length; i++){
+      s = s + x[i];
+    }
+    if(s == y){
+      return true;
+    }
+    else{
+      return false;
+    }
   }
 
 }

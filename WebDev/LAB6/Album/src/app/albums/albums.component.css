@@ -1,4 +1,4 @@
-li {
+.list{
     font-family: sans-serif;
     border-radius: 8px;
     background-color: bisque;
@@ -13,4 +13,5 @@ a {
 button {
     margin-left: 20px;
     border-radius: 9px;
+    margin-right: 20px;
 }

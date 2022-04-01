@@ -20,8 +20,9 @@ export class AlbumsService implements OnInit{
     return this.client.get<Album>(`${this.BASE_URL}/albums/${id}`)
   }
 
-  addAlbum(album: Album): Observable<Album>{
+  addAlbum(album: Album): Observable<any>{
     // @ts-ignore
+    console.log('add', album);
     return this.client.post(`${this.BASE_URL}/albums`, album);
   }
 

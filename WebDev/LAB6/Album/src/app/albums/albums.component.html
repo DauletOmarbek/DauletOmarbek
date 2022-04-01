@@ -2,12 +2,22 @@
 <fieldset>
     <input type="text" [(ngModel)]="newAlbum">
     <button (click)="addAlbum()">Add Album</button>
+    <input type="text" [(ngModel)]="searchtext">
+    <button (click)="bsearch(searchtext)">Search</button>
 </fieldset>
 <ul>
-    <li *ngFor="let album of albums">
-        <a [routerLink]="['/albums', album.id]"> {{album.title}}</a>
-        <button (click)="deleteAlbum(album.id)">x</button>
-    </li>
+    <div *ngFor="let album of albums">
+        <div class="list" *ngIf= !boolsearch >
+            <a [routerLink]="['/albums', album.id]">{{album.title}}</a>
+            <button (click)="deleteAlbum(album.id)">Delete</button>
+        </div>
+        <div *ngIf= boolsearch>
+            <div class="list" *ngIf="search(album.title, searchtext), boolsearch">
+                <a [routerLink]="['/albums', album.id]">{{album.title}}</a>
+                <button (click)="deleteAlbum(album.id)">Delete</button>
+            </div>
+        </div>
+    </div>
 </ul>
 
 <p *ngIf="!loaded">Loading albums list...</p>
