@@ -1,0 +1,12 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block content %}
+<h1>Главная страницаa</h1>
+    {% for el in products %}
+        <h3>{{ el.name }} {{el.price}}</h3>
+    {% endfor %}
+{% endblock %}
