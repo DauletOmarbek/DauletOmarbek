@@ -1,0 +1,11 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block content %}
+<h1>Главная страницa</h1>
+    <h3>{{ x.name }} {{x.city}} {{x.address}}</h3>
+    <p>{{x.description}}</p>
+{% endblock %}
