@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
-from .models import Company
+from .models import Company, Vacancy
 
 
 def company_list(request):
@@ -17,4 +17,10 @@ def company_details(request, id):
 
 
 def company_vacancies(request, id):
-    return HttpResponse("<h2>Company_vacancies</h2>")
+    company = Company.objects.all()
+    vacancies = Vacancy.objects.all()
+    for x in company:
+        if x.id == id + 1:
+            return render(request, 'company_vacancies/index.html',
+                          {'title': 'Vacancies', 'y': vacancies, 'name_company': x.name})
+    return HttpResponse('<h2>Not found</h2>')
