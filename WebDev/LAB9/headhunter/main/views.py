@@ -1,34 +1,51 @@
 from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
-from .models import Company, Vacancy
-import json
+from django.http import HttpResponse
+from django.http.response import JsonResponse
+from .models import Vacancy, Company
 
 
-def company_list(request):
-    companys = Company.objects.all()
-    company_json = [company.to_json() for company in companys]
-    return JsonResponse(company_json, safe=False)
+
+def companies(request):
+    companie = Company.objects.all()
+    companies_list=[comp.to_json() for comp in companie]
+    return JsonResponse(companies_list, safe=False)
 
 
-def company_details(request, id):
+def company_id(request,comp_id):
     try:
-        company = Company.objects.get(id=id)
+        comp = Company.objects.get(id=comp_id)
     except Company.DoesNotExist as e:
-        return JsonResponse({'message': str(e)}, status=400)
+        return JsonResponse({'message': 'doesnt exist'})
+    return JsonResponse(comp.to_json())
 
-    return JsonResponse(company.to_json())
 
-
-def company_vacancies(request, id):
+def vacancies_in_comp(request, com_id):
     try:
-        company = Company.objects.get(id=id)
-        result = []
-        vacancys = Vacancy.objects.all()
-        vacancy_json = [vacancy.to_json() for vacancy in vacancys]
-        for x in vacancy_json:
-            if x.company == company.name:
-                result.append(x)
+        comp = Company.objects.get(id=com_id)
+        vacancies=[vacs.to_json() for vacs in comp.vacancy_set.all()]
     except Company.DoesNotExist as e:
-        return JsonResponse({'message': str(e)}, status=400)
+        return JsonResponse({'message': 'doesnt exist'})
+    return JsonResponse(vacancies, safe=False)
 
-    return JsonResponse(result, safe=False)
+
+def vacs(request):
+    vacancies=Vacancy.objects.all()
+    vacs=[vacans.to_json() for vacans in vacancies]
+    return JsonResponse(vacs,safe=False)
+
+
+def vacs_id(request,vac_id):
+    try:
+        vacancy = Vacancy.objects.get(id=vac_id)
+    except Vacancy.DoesNotExist as e:
+        return JsonResponse({'message': 'doesnt exist'})
+    return JsonResponse(vacancy.to_json())
+
+
+def vacs_topTen(request):
+    def compare(d):
+        return d['salary']
+    vacancies = Vacancy.objects.all()
+    topVacs = [vacs.to_json() for vacs in vacancies]
+    topVacs.sort(key=compare)
+    return JsonResponse(topVacs, safe=False)
