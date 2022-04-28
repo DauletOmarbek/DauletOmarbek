@@ -1,0 +1,8 @@
+<p>vacancy-list works!</p>
+<div *ngFor="let vacancy of vacancies">
+    <div *ngIf="vacancy.company == id">
+        <h1>{{vacancy.name}}</h1>
+        <p>{{vacancy.description}}</p>
+        <h4>{{vacancy.salary}}</h4>
+    </div>
+</div>
