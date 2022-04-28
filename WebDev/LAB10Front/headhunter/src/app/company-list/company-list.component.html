@@ -1,4 +1,5 @@
-<p>company-list works!</p>
+
     <div *ngFor="let company of companies">
         <a [routerLink]="['/companies', company.id]">{{company.name}}</a>
+        <button (click)="deleteCompany(company.id)">Delete</button>
     </div>

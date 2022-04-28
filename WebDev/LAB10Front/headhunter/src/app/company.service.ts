@@ -16,6 +16,10 @@ export class CompanyService implements OnInit {
     return this.client.get<Company[]>(`${this.BASE_URL}/companies`);
   }
 
+  deleteCompany(id: number): Observable<Company>{
+    return this.client.delete<Company>(`${this.BASE_URL}/companies/${id}`)
+  }
+
   ngOnInit() {
   }
 }

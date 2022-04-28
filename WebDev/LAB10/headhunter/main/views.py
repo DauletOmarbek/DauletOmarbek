@@ -130,6 +130,7 @@ class VacsInCompsVIEW(APIView):
     def delete(self, request, com_id=None):
         comp = self.get_object(com_id)
         comp.delete()
+        return HttpResponse('', status=204)
 
 
 def vacs(request):
@@ -205,3 +206,4 @@ class VacanciesIDAPIView(APIView):
     def delete(self, request, vac_id=None):
         vacs = self.get_object(vac_id)
         vacs.delete()
+        return HttpResponse('', status=204)

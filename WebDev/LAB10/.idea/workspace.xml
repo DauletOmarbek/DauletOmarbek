@@ -2,74 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb092669-bcf4-4a36-8d93-54989e476b13" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../OOP/Pacman/Pacman.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Set and map/Set and map.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Set and map/src/set.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Set map/Set map.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Set map/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Set map/src/com/company/set.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/pac/pac.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/pac/src/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/pac/src/InvalidMapException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/pac/src/Map.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/pac/src/MyPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/pac/src/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/pac/src/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/pac/src/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/untitled/src/Task2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/untitled/untitled.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/.idea/LAB.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/LAB10.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headhunter/headhunter/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headhunter/headhunter/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headhunter/headhunter/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headhunter/headhunter/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headhunter/headhunter/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headhunter/main/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headhunter/main/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headhunter/main/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headhunter/main/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headhunter/main/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headhunter/main/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headhunter/main/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headhunter/main/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headhunter/main/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headhunter/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB5/6d2gzh--run/src/app/categories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB5/6d2gzh--run/src/app/categories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB8/taskmanager/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB8/taskmanager/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB8/taskmanager/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB8/taskmanager/main/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB8/taskmanager/main/templates/product/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB8/taskmanager/main/templates/product/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB8/taskmanager/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB8/taskmanager/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/headhunter/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/headhunter/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/headhunter/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/headhunter/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/headhunter/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/main/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/main/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/main/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/main/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/main/migrations/0002_vacancy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/main/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/main/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/main/templates/company_details/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/main/templates/company_details/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/main/templates/company_vacancies/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/main/templates/company_vacancies/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/main/templates/main/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/main/templates/main/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/main/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/main/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/main/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB9/headhunter/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aa599b47-d895-476e-8b8c-0c44d6fc143a.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headhunter/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/headhunter/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headhunter/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/headhunter/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headhunter/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/headhunter/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +82,7 @@
       <workItem from="1651086074993" duration="30000" />
       <workItem from="1651122895456" duration="1863000" />
       <workItem from="1651130201771" duration="1354000" />
+      <workItem from="1651136938826" duration="3164000" />
     </task>
     <servers />
   </component>
